@@ -1,0 +1,88 @@
+{
+  "best_model": "xgboost",
+  "best_metrics": {
+    "auroc": 0.8726276408450704,
+    "auprc": 0.6682441104788285,
+    "sensitivity": 0.58125,
+    "specificity": 0.9549295774647887,
+    "brier_score": 0.09274550212774,
+    "ece": 0.041879742361705066,
+    "n_samples": 870,
+    "n_positive": 160
+  },
+  "lr_metrics": {
+    "auroc": 0.8380941901408451,
+    "auprc": 0.6401779360266199,
+    "sensitivity": 0.4125,
+    "specificity": 0.9746478873239437,
+    "brier_score": 0.1007635060839074,
+    "ece": 0.03693670930586714,
+    "n_samples": 870,
+    "n_positive": 160
+  },
+  "xgb_metrics": {
+    "auroc": 0.8726276408450704,
+    "auprc": 0.6682441104788285,
+    "sensitivity": 0.58125,
+    "specificity": 0.9549295774647887,
+    "brier_score": 0.09274550212774,
+    "ece": 0.041879742361705066,
+    "n_samples": 870,
+    "n_positive": 160
+  },
+  "split_info": {
+    "train_patients": 140,
+    "val_patients": 30,
+    "test_patients": 30,
+    "train_rows": 4060,
+    "val_rows": 870,
+    "test_rows": 870
+  },
+  "feature_count": 36,
+  "ablation": [
+    {
+      "name": "EHR only",
+      "auroc": 0.8141241197183099,
+      "auprc": 0.5274501204207322,
+      "sensitivity": 0.50625,
+      "specificity": 0.9507042253521126,
+      "brier_score": 0.10927862517067068,
+      "ece": 0.10616654129948655,
+      "n_samples": 870,
+      "n_positive": 160
+    },
+    {
+      "name": "Wearable only",
+      "auroc": 0.5794982394366197,
+      "auprc": 0.2173174081899279,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "brier_score": 0.14982723761945305,
+      "ece": 0.03259911826772479,
+      "n_samples": 870,
+      "n_positive": 160
+    },
+    {
+      "name": "EHR + Wearable",
+      "auroc": 0.8785915492957748,
+      "auprc": 0.658671971991988,
+      "sensitivity": 0.56875,
+      "specificity": 0.9591549295774648,
+      "brier_score": 0.09081130142402695,
+      "ece": 0.053717285215540644,
+      "n_samples": 870,
+      "n_positive": 160
+    },
+    {
+      "name": "DAWNTWIN (full)",
+      "auroc": 0.8824735915492958,
+      "auprc": 0.6821733851792573,
+      "sensitivity": 0.60625,
+      "specificity": 0.9535211267605633,
+      "brier_score": 0.09020257160643838,
+      "ece": 0.041895997357087274,
+      "n_samples": 870,
+      "n_positive": 160
+    }
+  ]
+}
